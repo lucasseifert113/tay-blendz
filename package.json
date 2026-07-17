@@ -2,23 +2,7 @@
   "name": "tay-blendz",
   "version": "1.0.0",
   "private": true,
-  "engines": {
-    "node": ">=20.9.0"
-  },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "16.2.10",
-    "react": "19.2.7",
-    "react-dom": "19.2.7"
-  },
-  "devDependencies": {
-    "@types/node": "latest",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "typescript": "latest"
+    "build": "rm -rf dist && mkdir -p dist && cp index.html styles.css dist/ && cp -R public/. dist/"
   }
 }
