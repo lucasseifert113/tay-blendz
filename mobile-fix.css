@@ -1,0 +1,61 @@
+@media (max-width: 720px) {
+  .hero {
+    gap: 1.25rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .hero-visual {
+    display: grid;
+    width: 100%;
+    min-height: auto;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0 2.75rem;
+    isolation: isolate;
+  }
+
+  .visual-halo {
+    width: 92%;
+    opacity: 0.78;
+  }
+
+  .card-image {
+    position: relative;
+    width: 94%;
+    max-width: none;
+    border-radius: 1rem;
+  }
+
+  .card-image-front {
+    top: auto;
+    right: auto;
+    grid-area: 1 / 1;
+    z-index: 2;
+    margin: 0 0 0 auto;
+    transform: rotate(1.5deg);
+  }
+
+  .card-image-back {
+    bottom: auto;
+    left: auto;
+    grid-area: 1 / 1;
+    z-index: 1;
+    margin: 38% auto 0 0;
+    transform: rotate(-2deg);
+  }
+
+  .visual-tag {
+    right: 0.3rem;
+    bottom: 0;
+    z-index: 4;
+  }
+}
+
+@media (max-width: 390px) {
+  .hero-visual {
+    min-height: auto;
+  }
+
+  .card-image {
+    width: 96%;
+  }
+}
