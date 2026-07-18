@@ -1,8 +1,10 @@
 const portfolioImage =
   "https://raw.githubusercontent.com/lucasseifert113/seifert-sites/main/ChatGPT%20Image%20Jul%2017%2C%202026%2C%2001_28_24%20PM.png";
 
+const bookingUrl = "https://search.thecut.co/barbers/Keagan-Taylor-kt1npix";
+
 const socialLinks = [
-  { label: "Book on TheCut", href: "https://book.thecut.co/", primary: true },
+  { label: "Book on TheCut", href: bookingUrl, primary: true },
   { label: "Instagram", href: "https://www.instagram.com/tay.belndz.0/" },
   { label: "Snapchat", href: "https://www.snapchat.com/add/tay.blendz.0" },
   { label: "Facebook", href: "https://www.facebook.com/search/top?q=tay%20blendz" },
@@ -26,7 +28,7 @@ export default function Home() {
         <p>Platteville barber specializing in fades, tapers, lineups, and custom designs.</p>
 
         <div className="old-top-actions">
-          <a className="old-button old-button-gold" href="https://book.thecut.co/" target="_blank" rel="noreferrer">
+          <a className="old-button old-button-gold" href={bookingUrl} target="_blank" rel="noreferrer">
             Book on The Cut
           </a>
           <a className="old-button old-button-outline" href="https://www.instagram.com/tay.belndz.0/" target="_blank" rel="noreferrer">
@@ -49,7 +51,7 @@ export default function Home() {
             alt="Tay Blendz haircut portfolio featuring fades, tapers, curls, and clean lineups"
           />
         </div>
-        <a className="old-button old-button-gold old-full-button" href="https://book.thecut.co/" target="_blank" rel="noreferrer">
+        <a className="old-button old-button-gold old-full-button" href={bookingUrl} target="_blank" rel="noreferrer">
           Book Your Cut
         </a>
       </section>
