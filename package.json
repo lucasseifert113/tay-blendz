@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "rm -rf dist && mkdir -p dist && cp index.html styles.css dist/ && cat mobile-fix.css >> dist/styles.css && cp -R public/. dist/"
+    "build": "rm -rf dist && mkdir -p dist && cp index.html styles.css dist/ && cat mobile-fix.css >> dist/styles.css && cp -R public/. dist/ && cp 'ChatGPT Image Jul 17, 2026, 10_52_26 PM (1).png' dist/tay-card-front-new.png && cp 'ChatGPT Image Jul 17, 2026, 10_52_26 PM (2).png' dist/tay-card-back-new.png"
   }
 }
